@@ -9,7 +9,8 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
-  background: black;
+  /*background: black;*/
+  background-image: url('bg-img.webp');
   color: grey;
 }
 ul {
@@ -35,8 +36,8 @@ img {
   width: 100%;
   height: 93vh;
   position: relative;
-  background-image: url("https://external-preview.redd.it/cUPRznS90EDa8g9ceHfg3yBXxwNIV4dgp22qj3gmq3M.jpg?auto=webp&s=b163a56aeb6e6bf07f5bb904cc561de82d646ec6")
-    no-repeat center center/cover;
+  /*background-image: url("bg-img.webp")
+    no-repeat center center/cover;*/
 }
 .showcase-top {
   position: relative;
@@ -55,4 +56,57 @@ img {
     top: 50%;
     right: 0;
     transform: translate(-50% , -50%) ;
+}
+.showcase-content{
+    position: relative;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 9rem;
+}
+.showcase-content h1{
+    
+    font-weight: 700;
+
+    font-size: 5.2rem;
+    line-height: 1.1;
+    margin: 0 0 2rem;
+
+}
+
+/*buttons*/
+.btn{
+    display: inline-block;
+    background: var(--primary-color);
+    color: white;
+    padding: 0.4rem;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    outline: none;
+    box-shadow: 0 1px 0 rgba(0,0,0, 0.45); 
+    border-radius: 2px;
+
+}
+.btn:hover{
+    opacity: 0.9;
+
+}
+.btn-rounded{
+    border-radius: 5px;
+}
+.btn-xl{
+    font-size: 2rem;
+    padding: 1.5rem 2.1rem;
+    text-transform: uppercase;
+}
+.btn-lg {
+    font-size: 1rem;
+    padding: 0.8rem 1.3rem;
+    text-transform: uppercase;
 }
