@@ -1,0 +1,58 @@
+:root {
+  --primary-color: red;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: black;
+  color: grey;
+}
+ul {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: white;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+p {
+  margin: 0.5rem 0;
+}
+img {
+  width: 100%;
+}
+.showcase {
+  width: 100%;
+  height: 93vh;
+  position: relative;
+  background-image: url("https://external-preview.redd.it/cUPRznS90EDa8g9ceHfg3yBXxwNIV4dgp22qj3gmq3M.jpg?auto=webp&s=b163a56aeb6e6bf07f5bb904cc561de82d646ec6")
+    no-repeat center center/cover;
+}
+.showcase-top {
+  position: relative;
+  height: 90px;
+}
+.showcase-top img {
+  width: 170px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50% ,-50%);
+}
+.showcase-top a{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50% , -50%) ;
+}
