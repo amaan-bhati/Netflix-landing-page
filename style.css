@@ -1,5 +1,7 @@
 :root {
   --primary-color: red;
+  --primary-color:black;
+
 }
 * {
   box-sizing: border-box;
@@ -10,9 +12,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   /*background: black;*/
-  background-image: url('bg-img.webp');
+  background-image:  url('dark-blur.png');
+  background-repeat:  no-repeat ;
+  background-size: cover;
   color: grey;
 }
+
 ul {
   list-style: none;
 }
@@ -33,14 +38,38 @@ img {
   width: 100%;
 }
 .showcase {
-  width: 100%;
-  height: 93vh;
-  position: relative;
-  /*background-image: url("bg-img.webp")
-    no-repeat center center/cover;*/
+    width: 100%;
+	height: 93vh;
+	position: relative;
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('dark-bg.png') no-repeat center center/cover;
 }
+/*.showcase::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.6);
+	box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+}*/
+/*.showcase::after{
+    content: '';
+    position: 93vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0,0,0 , 0.6);
+    
+
+}*/
 .showcase-top {
   position: relative;
+  z-index: 2;
   height: 90px;
 }
 .showcase-top img {
@@ -50,6 +79,7 @@ img {
   left: 50%;
 
   transform: translate(-50% ,-50%);
+  margin-left: 0;
 }
 .showcase-top a{
     position: absolute;
@@ -59,6 +89,7 @@ img {
 }
 .showcase-content{
     position: relative;
+    z-index: 2;
     margin:auto;
     display: flex;
     flex-direction: column;
@@ -75,6 +106,22 @@ img {
     line-height: 1.1;
     margin: 0 0 2rem;
 
+}
+.showcase-content p {
+    text-transform: uppercase;
+    color: white;
+    font-weight:400 ;
+    font-size: 1.9rem;
+    line-height: 1.25;
+    margin:0 0 2rem;
+
+}
+
+/*tabs*/
+.tabs{
+  background: var(--dark-color);
+  padding-top: 1rem;
+  border-bottom: 3px solid #3d3d3d;
 }
 
 /*buttons*/
